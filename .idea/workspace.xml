@@ -4,30 +4,68 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f014be7e-374d-41aa-9d98-d1ecb11501b9" name="Changes" comment="done!" />
+    <list default="true" id="f014be7e-374d-41aa-9d98-d1ecb11501b9" name="Changes" comment="done!">
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/Typing Speed Game/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rock paper scissors/paper.png" beforeDir="false" afterPath="$PROJECT_DIR$/Rock Paper Scissors/paper.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rock paper scissors/rock paper scissors advanced.py" beforeDir="false" afterPath="$PROJECT_DIR$/Rock Paper Scissors/rock paper scissors advanced.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rock paper scissors/rock.png" beforeDir="false" afterPath="$PROJECT_DIR$/Rock Paper Scissors/rock.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rock paper scissors/scissors.png" beforeDir="false" afterPath="$PROJECT_DIR$/Rock Paper Scissors/scissors.png" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Jamian-E"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Jamian-E/AI-Project.git",
+    "accountId": "eeda4748-2a32-43f9-bb69-cba9e93204f3"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 1
+}]]></component>
+  <component name="ProjectId" id="3FB10I2M1EtQhO49Yv7caAc0Qkl" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/s2501096/OneDrive - Notre Dame Catholic Sixth Form College/Typing Speed Game",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Typing Speed Game" type="Python.FlaskServer">
       <module name="Typing Speed Game" />
-      <option name="target" value="$PROJECT_DIR$/app.py" />
+      <option name="target" value="$PROJECT_DIR$/Typing Speed Game/app.py" />
       <option name="targetType" value="PATH" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
@@ -36,8 +74,48 @@
       <method v="2" />
     </configuration>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-PY-251.29188.40" />
+        <option value="bundled-python-sdk-1fd13f53cab9-64d779b69b7a-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.29188.40" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f014be7e-374d-41aa-9d98-d1ecb11501b9" name="Changes" comment="done!" />
+      <created>1781533424541</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1781533424541</updated>
+      <workItem from="1781533425702" duration="432000" />
+    </task>
+    <task id="LOCAL-00001" summary="done!">
+      <option name="closed" value="true" />
+      <created>1781533531449</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1781533531449</updated>
+    </task>
+    <task id="LOCAL-00002" summary="done!">
+      <option name="closed" value="true" />
+      <created>1781533574588</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1781533574588</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="done!" />
+    <option name="LAST_COMMIT_MESSAGE" value="done!" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Typing_Speed_Game$Typing_Speed_Game.coverage" NAME="Typing Speed Game Coverage Results" MODIFIED="1781530445664" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
