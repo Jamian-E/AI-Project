@@ -51,6 +51,15 @@ losses = 0
 draws = 0
 series_winner = None
 
+# --- AI ADAPTATION MEMORY ---
+# Tracks transitions: after playing choice X, how often does the player play Y?
+ai_memory = {
+    "rock": {"rock": 0, "paper": 0, "scissors": 0},
+    "paper": {"rock": 0, "paper": 0, "scissors": 0},
+    "scissors": {"rock": 0, "paper": 0, "scissors": 0}
+}
+last_player_choice = None
+
 
 class Button:
     def __init__(self, x, y, w, h, text, action_value=None):
@@ -96,7 +105,7 @@ loading_particles = []
 
 
 def reset_game():
-    global wins, losses, draws, player_choice, cpu_choice, result_text, series_winner, state
+    global wins, losses, draws, player_choice, cpu_choice, result_text, series_winner, state, ai_memory, last_player_choice
     wins = 0
     losses = 0
     draws = 0
@@ -105,6 +114,50 @@ def reset_game():
     result_text = ""
     series_winner = None
     state = "MENU"
+    last_player_choice = None
+    # Reset AI Memory
+    ai_memory = {
+        "rock": {"rock": 0, "paper": 0, "scissors": 0},
+        "paper": {"rock": 0, "paper": 0, "scissors": 0},
+        "scissors": {"rock": 0, "paper": 0, "scissors": 0}
+    }
+
+
+def get_adaptive_cpu_choice():
+    """Predicts player behavior based on history and selects the counter-move."""
+    global last_player_choice, ai_memory
+
+    # If it's the first round or no tracking data yet, guess randomly
+    if last_player_choice is None:
+        return random.choice(choices)
+
+    # Check what the player tends to do after their last move
+    history = ai_memory[last_player_choice]
+    total_tracked = sum(history.values())
+
+    # If we haven't built enough pattern data yet, fall back to random
+    if total_tracked == 0:
+        return random.choice(choices)
+
+    # Find what option the player picks most often after their last move
+    predicted_player_move = max(history, key=history.get)
+
+    # Counter that predicted move
+    counters = {
+        "rock": "paper",
+        "paper": "scissors",
+        "scissors": "rock"
+    }
+
+    return counters[predicted_player_move]
+
+
+def update_ai_memory(current_player_choice):
+    """Updates patterns based on what the player actually threw."""
+    global last_player_choice, ai_memory
+    if last_player_choice is not None:
+        ai_memory[last_player_choice][current_player_choice] += 1
+    last_player_choice = current_player_choice
 
 
 def determine_winner(player, cpu):
@@ -278,7 +331,13 @@ while running:
                 else:
                     continue
 
-                cpu_choice = random.choice(choices)
+                # Get predictive adaptive move from CPU
+                cpu_choice = get_adaptive_cpu_choice()
+
+                # Update memory with what the player just chose
+                update_ai_memory(player_choice)
+
+                # Calculate outcome
                 result_text = determine_winner(player_choice, cpu_choice)
 
     pygame.display.update()
